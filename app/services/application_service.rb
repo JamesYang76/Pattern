@@ -1,4 +1,4 @@
-class Service
+class ApplicationService
   attr_reader :result
 
   def self.call(*args, &block)

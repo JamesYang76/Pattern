@@ -1,4 +1,4 @@
-class PostCreateService < Service
+class PostCreateService < ApplicationService
   def initialize(post)
     @post = post
   end

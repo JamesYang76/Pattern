@@ -27,7 +27,7 @@ class PostsController < ApplicationController
       redirect_to po_creater.result.post, notice: 'Post was successfully created.'
     else
       @post = po_creater.result.post
-      render :new, po_creater.result.errors
+      render :new
     end
   end
 
