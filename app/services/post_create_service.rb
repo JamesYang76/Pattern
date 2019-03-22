@@ -1,6 +1,6 @@
 class PostCreateService < ApplicationService
-  def initialize(post)
-    @post = post
+  def initialize(params:)
+    @post = Post.new(params)
   end
 
   def call
