@@ -1,15 +1,27 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  helper_method :post, :posts
+
+  def post
+    PostDecorator.new(@post, view_context)
+  end
+
+  def posts
+    @posts.all.map { |post| PostDecorator.new(post, view_context) }
+  end
+
 
   # GET /posts
   # GET /posts.json
   def index
+    #@posts = Post.all.map { |post| PostDecorator.new(post, view_context) }
     @posts = Post.all
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+   # @post_deco = PostDecorator.new(@post, view_context)
   end
 
   # GET /posts/new
@@ -63,6 +75,6 @@ class PostsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :published)
   end
 end
