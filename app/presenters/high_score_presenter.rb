@@ -1,12 +1,13 @@
 class HighScorePresenter < BasePresenter
-  presents :high_score
+  #presents :high_score
 
   def printed_game_title
     game.upcase
   end
 
   def scored_date
-    high_score.created_at.strftime("%d %b %Y")
+    #high_score.created_at.strftime("%d %b %Y")
+    created_at.strftime("%d %b %Y")
   end
 
   def scored_badge

@@ -6,11 +6,13 @@ class BasePresenter < SimpleDelegator
 
   private
 
+=begin
   def self.presents(name)
     define_method(name) do
       @object
     end
   end
+=end
 
   def h
     @template
