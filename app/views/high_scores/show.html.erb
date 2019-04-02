@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+
+<% present @high_score do |high_score_presenter| %>
+  <h1><%= high_score_presenter.printed_game_title %></h1>
+  <dl>
+    <dt>Score:</dt>
+    <dd><%= high_score_presenter.score %></dd>
+    <dt>Company:</dt>
+    <dd><%= high_score_presenter.company %></dd>
+    <dt>Scored Date:</dt>
+    <dd><%= high_score_presenter.scored_date %></dd>
+  </dl>
+<% end %>
+
+
+
+<%= link_to 'Edit', edit_high_score_path(@high_score) %> |
+<%= link_to 'Back', high_scores_path %>

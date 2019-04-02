@@ -21,3 +21,15 @@ https://medium.com/kadwill/decorators-and-the-draper-gem-be9ff03bfb5e
 https://github.com/codeclimate/refactoring-fat-models
 https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/
 
+
+
+### Presenter
+
+#### Refer
+* http://railscasts.com/episodes/287-presenters-from-scratch?autoplay=true
+* https://www.driftingruby.com/episodes/rails-presenters
+
+
+
+* https://www.justinweiss.com/articles/when-is-an-activerecord-model-too-fat/
+
