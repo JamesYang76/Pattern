@@ -1,0 +1,28 @@
+<%= form_for @score_form, url: users_high_scores_path do |form| %>
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.number_field :score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :game %>
+    <%= form.text_field :game %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+
+<% end %>
